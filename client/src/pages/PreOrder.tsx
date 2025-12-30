@@ -61,7 +61,7 @@ export default function PreOrder() {
           <div className="space-y-2">
             <h2 className="text-2xl font-bold text-slate-900">You're on the list!</h2>
             <p className="text-slate-600">
-              Thanks for your interest in the Presence Clock. Please leave your contact and we'll email you as soon as pre-orders officially open.
+              Thanks for your interest in the Presence Clock. We'll email you as soon as pre-orders officially open.
             </p>
           </div>
           <Button 
