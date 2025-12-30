@@ -65,9 +65,11 @@ export default function Pricing() {
 
           <div className="mt-12 text-center">
             <p className="text-muted-foreground mb-4">Not ready to buy?</p>
-            <Button variant="link" className="text-primary text-lg">
-              Join the Waitlist (Free)
-            </Button>
+            <Link href="/pre-order">
+              <Button variant="link" className="text-primary text-lg">
+                Join the Waitlist (Free)
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
