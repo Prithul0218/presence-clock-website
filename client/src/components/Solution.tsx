@@ -10,12 +10,12 @@ export default function Solution() {
     {
       icon: <Activity className="w-8 h-8 text-secondary" />,
       title: "See Your Progress",
-      description: "A 300° LED ring fills with color as you work. Green → Yellow → Red. Visual feedback that respects your focus."
+      description: "An LED ring fills with color as you work. Green → Yellow → Red. Gentle reminders to take breaks that respect your focus."
     },
     {
       icon: <MousePointerClick className="w-8 h-8 text-success" />,
       title: "Honest Breaks",
-      description: "Tap the encoder to log breaks. No guessing. Your device knows: 5 hours work, 2 documented breaks. Show your clients."
+      description: "Simply walk away for a break, or tap the encoder to log breaks. No guessing. Your device knows: 5 hours work, 2 documented breaks."
     }
   ];
 
@@ -27,7 +27,7 @@ export default function Solution() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="text-primary font-semibold tracking-wider uppercase text-sm">How It Works</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Automatic detection. Beautiful feedback. Honest tracking.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Automatic presence detection. Clear feedback. Honest tracking.</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -69,7 +69,7 @@ export default function Features() {
     <section id="features">
       <FeatureBlock 
         title="A Visual Reminder You Can't Ignore"
-        description="The LED ring doesn't beep. It doesn't send notifications. It just quietly fills with color. Green when you're fresh. Yellow as you warm up. Orange as fatigue sets in. Red when it's time to stand. Your peripheral vision catches it—no headphones can drown it out."
+        description="The LED ring doesn't ring. It doesn't send notifications. It just quietly fills with color. Green when you're fresh. Yellow as you warm up. Orange as fatigue sets in. Red when it's time to stand. Your peripheral vision catches it—no headphones can drown it out."
         image="/images/led-ring-closeup.png"
         imageAlt="LED Ring Detail"
         benefits={[
@@ -96,15 +96,15 @@ export default function Features() {
         image="/images/dashboard-preview.png"
         imageAlt="Web Dashboard"
         benefits={[
-          "Access at http://esp32.local on your WiFi network",
+          "Access from any device on your WiFi network",
           "No cloud. No subscriptions.",
-          "Privacy-first: All connections are local"
+          "Privacy-first: A truly privacy focused device"
         ]}
       />
 
       <FeatureBlock 
         title="Tap to Confirm Your Break"
-        quote="Most timers just beep. You can ignore them. Ours requires a physical interaction. Tap the encoder to say 'I'm standing up.' Tap again when you're back. This simple act creates accountability and gives you honest break logs."
+        quote="Most timers just beep. You can ignore them. Ours requires a physical interaction. Walk away to do some stretches, or tap the encoder to say 'I'm taking a break.' Tap again when you're ready to lock in. This simple act creates accountability and gives you honest break logs."
         image="/images/encoder-closeup.png"
         imageAlt="Encoder Detail"
         reversed={true}

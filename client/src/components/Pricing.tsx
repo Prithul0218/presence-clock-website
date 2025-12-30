@@ -13,7 +13,7 @@ export default function Pricing() {
 
             <div className="relative z-10 p-8 md:p-16 text-center">
               <div className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground text-sm font-semibold mb-6 border border-primary/30">
-                Early Bird Pricing
+                Early Bird Pricing - Lifetime Local Dashboard Access
               </div>
               
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Reserve Your Device</h2>
@@ -34,7 +34,7 @@ export default function Pricing() {
                 {[
                   "Pre-assembled Presence Clock",
                   "WiFi setup guide",
-                  "30-day dashboard access",
+                  "Lifetime local dashboard access",
                   "Lifetime firmware updates",
                   "Access to community Discord"
                 ].map((item, i) => (
@@ -49,11 +49,11 @@ export default function Pricing() {
 
               <div className="flex flex-col items-center gap-4">
                 <Button size="lg" className="h-16 px-12 text-xl rounded-full bg-white text-slate-900 hover:bg-slate-100 w-full md:w-auto shadow-xl shadow-white/10">
-                  Reserve Now - $5
+                  Pre-order Now - $5
                   <ArrowRight className="ml-2 h-6 w-6" />
                 </Button>
                 <p className="text-sm text-slate-500">
-                  Limited to first 500 units • 247 reserved so far
+                  Limited to first 500 units
                 </p>
               </div>
             </div>

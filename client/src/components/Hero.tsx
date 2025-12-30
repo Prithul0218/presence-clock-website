@@ -18,16 +18,19 @@ export default function Hero() {
                 The <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Presence</span> Clock
               </h1>
               <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">
-                See your sitting before your back does.
+                A desk timer that keeps you honest.
               </h2>
-              <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-                A physical device designed for people who lock into deep work. Automatic presence tracking, beautiful LED feedback, and honest work hour logging. No distractions. No subscriptions. Just focus.
+              <p className="text-lg text-muted-foreground max-w-xl leading-relaxed mb-6">
+                A physical desk companion for deep focus. Automatic presence tracking, beautiful LED feedback, and honest work hour logging.
               </p>
+              <div className="inline-block bg-slate-900 text-white px-4 py-2 rounded-lg font-mono text-sm tracking-wide shadow-md transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+                NO DISTRACTIONS. NO SUBSCRIPTIONS. JUST FOCUS.
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="h-14 px-8 text-lg rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity shadow-lg shadow-primary/25">
-                Reserve Now - $5
+                Pre-order Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" size="lg" className="h-14 px-8 text-lg rounded-full border-2 hover:bg-accent/50">

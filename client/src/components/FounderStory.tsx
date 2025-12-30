@@ -10,7 +10,7 @@ export default function FounderStory() {
 
           <div className="prose prose-lg prose-slate max-w-none">
             <p className="text-xl leading-relaxed text-muted-foreground mb-8">
-              "I'm Prithul, a university student and full-time freelancer. I can lock into deep work and lose 4-5 hours without realizing it.
+              "I'm Prithul, a university student and part-time freelancer. I can lock into deep work and lose 4-5 hours without realizing it.
             </p>
             
             <p className="text-xl leading-relaxed text-foreground font-medium mb-8">
