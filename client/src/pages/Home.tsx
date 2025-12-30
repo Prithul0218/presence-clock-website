@@ -1,25 +1,31 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Hero from "@/components/Hero";
+import Problem from "@/components/Problem";
+import Solution from "@/components/Solution";
+import Features from "@/components/Features";
+import Specs from "@/components/Specs";
+import FounderStory from "@/components/FounderStory";
+import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
+import StickyCTA from "@/components/StickyCTA";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+    <div className="min-h-screen flex flex-col bg-white font-sans selection:bg-primary/20 selection:text-primary">
+      <main className="flex-1">
+        <Hero />
+        <Problem />
+        <Solution />
+        <Features />
+        <Specs />
+        <FounderStory />
+        <Testimonials />
+        <Pricing />
+        <FAQ />
       </main>
+      <Footer />
+      <StickyCTA />
     </div>
   );
 }
