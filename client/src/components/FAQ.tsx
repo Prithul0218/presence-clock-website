@@ -29,7 +29,7 @@ export default function FAQ() {
     },
     {
       question: "What if I'm away from my desk but still in the radar range?",
-      answer: "The LD2410 radar is specifically tuned to detect humans at a desk. It won't trigger for passing by. If you need to manually pause, use the encoder."
+      answer: "The advanced radar sensor is specifically tuned to detect humans at a desk. It won't trigger for passing by. If you need to manually pause, use the encoder."
     },
     {
       question: "Will there be future versions?",
@@ -37,7 +37,7 @@ export default function FAQ() {
     },
     {
       question: "Is the hardware open-source?",
-      answer: "The firmware is open-source. Hardware schematics are available for enthusiasts who want to mod their device."
+      answer: "The firmware is open-source. Hardware schematics are available for enthusiasts who want to mod their device. We want a community of makers to mod our device however they want!"
     }
   ];
 

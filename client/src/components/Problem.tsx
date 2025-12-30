@@ -12,7 +12,7 @@ export default function Problem() {
               {/* Placeholder for video/animation - using a static representation for now */}
               <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
                 <div className="text-center p-8">
-                  <div className="text-6xl mb-4">😫</div>
+                  <div className="text-6xl mb-4 font-bold text-primary/20">?</div>
                   <p className="text-xl font-medium text-muted-foreground">4 hours passed... back hurts...</p>
                 </div>
               </div>
@@ -37,9 +37,9 @@ export default function Problem() {
             <div className="space-y-4">
               {[
                 "Phone timers = get distracted by notifications",
-                "Alarm clocks = can't hear through headphones, no visual feedback",
-                "Pomodoro apps = opening phone breaks your focus",
-                "Willpower alone = doesn't work for hyperfocus"
+                "Alarm clocks = can't hear through headphones, set manually",
+                "Pomodoro apps = other apps break focus, forget to pause and start",
+                "Willpower alone = often comes at the cost of health"
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3 p-4 rounded-xl bg-white border border-border/50 shadow-sm hover:shadow-md transition-shadow">
                   <XCircle className="w-6 h-6 text-destructive shrink-0 mt-0.5" />

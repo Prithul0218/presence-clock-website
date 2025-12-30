@@ -35,6 +35,7 @@ export default function Pricing() {
                   "Pre-assembled Presence Clock",
                   "WiFi setup guide",
                   "Lifetime local dashboard access",
+                  "30-day cloud dashboard access",
                   "Lifetime firmware updates",
                   "Access to community Discord"
                 ].map((item, i) => (

@@ -18,12 +18,12 @@ export default function Specs() {
             </h3>
             <ul className="space-y-6">
               {[
-                { label: "Presence Sensor", value: "Radar Presence Detection" },
-                { label: "Visual Feedback", value: "300° LED Ring" },
+                { label: "Sensors", value: "Presence Detection, Ambient Light Sensor" },
+                { label: "Visual Feedback", value: "360° LED Ring" },
                 { label: "Display", value: "Crisp LCD Display" },
-                { label: "Input", value: "Tactile Rotary Encoder" },
+                { label: "Input", value: "Tactile Rotary Knob" },
                 { label: "Audio", value: "Customizable Buzzer" },
-                { label: "Sensors", value: "Ambient Light Sensor" }
+                
               ].map((spec, i) => (
                 <li key={i} className="flex justify-between items-center border-b border-slate-800 pb-2">
                   <span className="text-slate-400">{spec.label}</span>
@@ -43,7 +43,7 @@ export default function Specs() {
                 { label: "Connectivity", value: "WiFi (Optional)" },
                 { label: "Access", value: "Local Web Dashboard" },
                 { label: "Privacy", value: "100% Local Data" },
-                { label: "License", value: "Open Source Firmware" }
+                { label: "License", value: "Open Source" }
               ].map((spec, i) => (
                 <li key={i} className="flex justify-between items-center border-b border-slate-800 pb-2">
                   <span className="text-slate-400">{spec.label}</span>
@@ -64,8 +64,7 @@ export default function Specs() {
             {[
               { icon: <Battery className="w-6 h-6" />, label: "Sitting Threshold", value: "60/90/120+ min" },
               { icon: <Eye className="w-6 h-6" />, label: "Break Duration", value: "5/15/30 min" },
-              { icon: <Sun className="w-6 h-6" />, label: "LED Scheme", value: "Custom Colors" },
-              { icon: <Sun className="w-6 h-6" />, label: "Lighting", value: "Ambient Control" },
+              { icon: <Sun className="w-6 h-6" />, label: "Lighting", value: "Custom Colors & Ambient Control" },
               { icon: <Volume2 className="w-6 h-6" />, label: "Alerts", value: "Volume Control" }
             ].map((item, i) => (
               <div key={i} className="p-6 rounded-2xl bg-slate-800/50 border border-slate-700 hover:bg-slate-800 transition-colors">

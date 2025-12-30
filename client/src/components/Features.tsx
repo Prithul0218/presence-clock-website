@@ -103,7 +103,7 @@ export default function Features() {
       />
 
       <FeatureBlock 
-        title="Tap to Confirm Your Break"
+        title="Tap to Confirm Your Break, Or Just Walk Away..."
         quote="Most timers just beep. You can ignore them. Ours requires a physical interaction. Walk away to do some stretches, or tap the encoder to say 'I'm taking a break.' Tap again when you're ready to lock in. This simple act creates accountability and gives you honest break logs."
         image="/images/encoder-closeup.png"
         imageAlt="Encoder Detail"
