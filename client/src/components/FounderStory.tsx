@@ -1,6 +1,6 @@
 export default function FounderStory() {
   return (
-    <section className="py-24 bg-white relative">
+    <section id="founder-story" className="py-24 bg-white relative">
       <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-primary to-secondary hidden lg:block" />
       
       <div className="container mx-auto px-4 md:px-6">

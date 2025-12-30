@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Hero() {
   return (
@@ -29,15 +30,21 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/pre-order">
+                <Button 
+                  size="lg" 
+                  className="h-14 px-8 text-lg rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity shadow-lg shadow-primary/25"
+                >
+                  Pre-order Now
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button 
+                variant="outline" 
                 size="lg" 
-                className="h-14 px-8 text-lg rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity shadow-lg shadow-primary/25"
-                onClick={() => document.getElementById('problem-section')?.scrollIntoView({ behavior: 'smooth' })}
+                className="h-14 px-8 text-lg rounded-full border-2 hover:bg-accent/50"
+                onClick={() => document.getElementById('founder-story')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Learn More
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="h-14 px-8 text-lg rounded-full border-2 hover:bg-accent/50">
                 Learn the story
               </Button>
             </div>
