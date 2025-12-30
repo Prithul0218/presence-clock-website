@@ -28,7 +28,7 @@ export default function Problem() {
                     <Clock className="w-4 h-4" />
                     <span>Overworked</span>
                   </div>
-                  <p className="text-xl font-medium text-slate-600">"4 hours passed... back hurts..."</p>
+                  <p className="text-xl font-medium text-slate-600">"4 hours passed... back hurts..." Never again. Never again.</p>
                 </div>
 
               </div>
