@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Pricing() {
   return (
@@ -49,10 +50,12 @@ export default function Pricing() {
               </div>
 
               <div className="flex flex-col items-center gap-4">
-                <Button size="lg" className="h-16 px-12 text-xl rounded-full bg-white text-slate-900 hover:bg-slate-100 w-full md:w-auto shadow-xl shadow-white/10">
-                  Pre-order Now - $5
-                  <ArrowRight className="ml-2 h-6 w-6" />
-                </Button>
+                <Link href="/pre-order">
+                  <Button size="lg" className="h-16 px-12 text-xl rounded-full bg-white text-slate-900 hover:bg-slate-100 w-full md:w-auto shadow-xl shadow-white/10">
+                    Pre-order Now - $5
+                    <ArrowRight className="ml-2 h-6 w-6" />
+                  </Button>
+                </Link>
                 <p className="text-sm text-slate-500">
                   Limited to first 500 units
                 </p>
