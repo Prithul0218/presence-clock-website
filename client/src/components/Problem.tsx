@@ -1,4 +1,4 @@
-import { XCircle } from "lucide-react";
+import { XCircle, AlertCircle, Clock } from "lucide-react";
 
 export default function Problem() {
   return (
@@ -8,16 +8,33 @@ export default function Problem() {
           
           {/* Visual Side */}
           <div className="order-2 lg:order-1 relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-white">
-              {/* Placeholder for video/animation - using a static representation for now */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4 font-bold text-primary/20">?</div>
-                  <p className="text-xl font-medium text-muted-foreground">4 hours passed... back hurts...</p>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-white border border-border/50">
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-50/50">
+                
+                {/* Timer Visual */}
+                <div className="relative mb-6">
+                  <div className="w-40 h-40 rounded-full border-8 border-red-100 flex flex-col items-center justify-center bg-white shadow-sm">
+                    <span className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Session</span>
+                    <span className="text-4xl font-mono font-bold text-slate-700">04:12</span>
+                  </div>
+                  <div className="absolute -top-2 -right-2 bg-red-500 text-white p-2 rounded-full shadow-lg animate-pulse">
+                    <AlertCircle className="w-6 h-6" />
+                  </div>
                 </div>
+
+                {/* Text */}
+                <div className="text-center space-y-2">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-red-600 text-sm font-medium">
+                    <Clock className="w-4 h-4" />
+                    <span>Overworked</span>
+                  </div>
+                  <p className="text-xl font-medium text-slate-600">"4 hours passed... back hurts..."</p>
+                </div>
+
               </div>
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+              
+              {/* Decorative elements */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-400/20 to-transparent" />
             </div>
             {/* Decorative pattern */}
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-pattern-dots opacity-20" />
