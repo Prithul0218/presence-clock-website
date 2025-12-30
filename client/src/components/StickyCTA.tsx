@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Link } from "wouter";
 
 export default function StickyCTA() {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,9 +32,11 @@ export default function StickyCTA() {
           </div>
           
           <div className="flex items-center gap-4 flex-1 sm:flex-none justify-center">
-            <Button className="rounded-full bg-white text-slate-900 hover:bg-slate-100 font-semibold px-6">
-              Reserve Now - $5
-            </Button>
+            <Link href="/pre-order">
+              <Button className="rounded-full bg-white text-slate-900 hover:bg-slate-100 font-semibold px-6">
+                Reserve Now - $5
+              </Button>
+            </Link>
             <button 
               onClick={() => setIsDismissed(true)}
               className="p-2 hover:bg-slate-800 rounded-full transition-colors"
