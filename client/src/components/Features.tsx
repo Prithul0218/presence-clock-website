@@ -11,7 +11,7 @@ interface FeatureProps {
   quote?: string;
 }
 
-function FeatureBlock({ title, description, image, imageAlt, benefits, reversed, quote }: FeatureProps) {
+function FeatureBlock({ title, description, image, imageAlt, benefits, reversed, quote, isVideo }: FeatureProps) {
   return (
     <div className={cn("py-16 md:py-24", reversed ? "bg-white" : "bg-accent/20")}>
       <div className="container mx-auto px-4 md:px-6">
@@ -43,14 +43,27 @@ function FeatureBlock({ title, description, image, imageAlt, benefits, reversed,
             )}
           </div>
 
-          {/* Image Content */}
+          {/* Image/Video Content */}
           <div className={cn("relative", reversed && "lg:col-start-1")}>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border/50 bg-white">
-              <img 
-                src={image} 
-                alt={imageAlt} 
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
-              />
+              {isVideo ? (
+                <video 
+                  src={image} 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img 
+                  src={image} 
+                  alt={imageAlt} 
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+                />
+              )}
             </div>
             {/* Decorative blob */}
             <div className={cn(
@@ -83,8 +96,9 @@ export default function Features() {
       <FeatureBlock 
         title="Your Phone Stays in Your Pocket"
         quote="Phone timers have a fatal flaw: you have to pick up your phone. And once you do, Slack messages, Instagram, email—they're all waiting. Our device eliminates that choice. No notifications. No temptation. Just a beautiful desk companion that does one thing perfectly."
-        image="/images/product-desk-context.png"
+        image="/images/put-down-phone.mp4"
         imageAlt="Phone vs Presence Clock"
+        isVideo={true}
         reversed={true}
         benefits={[
           "Users report 23% better focus when using a physical timer vs. phone timers"
