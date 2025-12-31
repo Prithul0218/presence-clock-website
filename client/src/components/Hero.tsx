@@ -22,7 +22,7 @@ export default function Hero() {
                 A physical desk companion for deep focus.
               </h2>
               <p className="text-lg text-muted-foreground max-w-xl leading-relaxed mb-6">
-                Automatic presence tracking, beautiful LED feedback, and honest work hour logging.
+                Automatic presence tracking, LED feedback reminding you to take breaks, and accurate work hour logging.
               </p>
               <div className="inline-block bg-slate-900 text-white px-4 py-2 rounded-lg font-mono text-sm tracking-wide shadow-md transform -rotate-1 hover:rotate-0 transition-transform duration-300">
                 NO DISTRACTIONS. NO SUBSCRIPTIONS. JUST FOCUS.
