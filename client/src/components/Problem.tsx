@@ -10,7 +10,7 @@ export default function Problem() {
           <div className="order-2 lg:order-1 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-white border border-border/50">
               <video 
-                src="/images/hero_product_video.mp4" 
+                src="/images/product-video.mp4" 
                 autoPlay
                 loop
                 muted
