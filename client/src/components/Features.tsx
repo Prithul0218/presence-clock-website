@@ -8,9 +8,10 @@ interface FeatureProps {
   benefits?: string[];
   reversed?: boolean;
   quote?: string;
+  isVideo?: boolean;
 }
 
-function FeatureBlock({ title, description, image, imageAlt, benefits, reversed, quote }: FeatureProps) {
+function FeatureBlock({ title, description, image, imageAlt, benefits, reversed, quote, isVideo }: FeatureProps) {
   return (
     <div className={cn("py-16 md:py-24", reversed ? "bg-white" : "bg-accent/20")}>
       <div className="container mx-auto px-4 md:px-6">
@@ -45,11 +46,24 @@ function FeatureBlock({ title, description, image, imageAlt, benefits, reversed,
           {/* Image Content */}
           <div className={cn("relative", reversed && "lg:col-start-1")}>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border/50 bg-white">
-              <img 
-                src={image} 
-                alt={imageAlt} 
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
-              />
+              {isVideo ? (
+                <video 
+                  src={image} 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto object-cover"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img 
+                  src={image} 
+                  alt={imageAlt} 
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+                />
+              )}
             </div>
             {/* Decorative blob */}
             <div className={cn(
@@ -70,8 +84,9 @@ export default function Features() {
       <FeatureBlock 
         title="A Visual Reminder You Can't Ignore"
         description="The LED ring doesn't ring. It doesn't send notifications. It just quietly fills with color. Green when you're fresh. Yellow as you warm up. Orange as fatigue sets in. Red when it's time to stand. Your peripheral vision catches it—no headphones can drown it out."
-        image="/images/led-ring-closeup.png"
+        image="/images/put-down-phone.mp4"
         imageAlt="LED Ring Detail"
+        isVideo={true}
         benefits={[
           "Visible through headphones",
           "Subconscious feedback (works even during deep focus)",
